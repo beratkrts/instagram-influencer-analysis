@@ -12,7 +12,7 @@
 - [Project Workflow](#project-workflow)
 - [Dependencies](#dependencies)
 - [Conclusion](#conclusion)
-- [Team Contributions](#contributions)
+- [Team Contributions](#team-contributions)
 ---
 
 ## Introduction
