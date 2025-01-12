@@ -30,7 +30,7 @@ The system combines robust data preprocessing, feature engineering, and machine 
 ### 1. **Classification of Influencer Profiles**
 Using a Support Vector Machine (SVM) model, the system predicts the category (e.g., art, gaming, or fashion) for Instagram profiles. The classification is based on:
 - **Numerical Features**:
-  - Follower count, following count, and whether the account is a business account.
+  - Follower count, following count, average likes of the account, highlight reel count, and whether the account is a business account.
   - These features are standardized using **StandardScaler**, ensuring all numerical fields contribute equally to the SVM model by normalizing them to a mean of 0 and a standard deviation of 1.
 - **Textual Features**:
   - Captions and user biographies, which are processed and transformed into numerical vectors using **TfidfVectorizer**. This transformation emphasizes the importance of rare but significant words in classification, providing the model with meaningful textual insights.
@@ -40,18 +40,15 @@ The regression component predicts the expected number of likes for a given Insta
 - **Numerical Features**:
   - Attributes such as engagement rate, follower count, and average likes/comments per post.
   - These features are scaled using **StandardScaler** to ensure they are on a comparable scale, allowing the linear regression model to make accurate predictions.
-- **Textual Features**:
-  - Captions are processed using **TfidfVectorizer**, transforming the raw text into numerical vectors that represent the relative importance of terms in predicting the like count.
 
 ### 3. **Text Preprocessing**
 The system applies several preprocessing steps to textual data, such as:
 - Cleaning and normalizing text by removing special characters, URLs, and numbers.
 - Stemming Turkish text using the Turkish Stemmer.
-- Removing common and irrelevant words using custom stopwords.
 
 ### 4. **Feature Engineering**
 Key features are derived from raw data, such as:
-- **Engagement Rate**: Average likes divided by follower count.
+- **Engagement Rate**: Sum of average likes and average comments divided by follower count.
 - **Logarithmic Features**: Log transformations of numerical features like likes and followers to reduce skewness.
 - **Custom Stopwords**: Dynamically generated to filter irrelevant or overly frequent words in captions.
 
@@ -83,7 +80,7 @@ The system preprocesses textual and numerical data to ensure compatibility with 
 - **Objective**: Predict the number of likes a given post will receive.
 - **Feature Transformation**:
   - Numerical features, such as follower count and engagement rate, are scaled using **StandardScaler** to remove bias from differences in feature ranges.
-  - Post captions are vectorized with **TfidfVectorizer** to encode their textual content into numerical representations for regression.
+  - Local Outlier Factor is used to remove outliers.
 - **Model Training**: A linear regression model predicts the log-transformed like count, and predictions are reverted to the original scale for output.
 
 ### Step 5: Output Generation
