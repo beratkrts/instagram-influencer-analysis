@@ -12,7 +12,7 @@
 - [Project Workflow](#project-workflow)
 - [Dependencies](#dependencies)
 - [Conclusion](#conclusion)
-
+- [Team Contributions](#contributions)
 ---
 
 ## Introduction
@@ -125,3 +125,9 @@ The inclusion of feature engineering techniques, such as the calculation of enga
 
 
 In conclusion, this project marks a comprehensive attempt to leverage machine learning for influencer classification and post like count prediction. While the SVM and Linear Regression models, supported by advanced preprocessing and feature extraction techniques, exhibited promising capabilities, the intricacies of social media data pose ongoing challenges. The experience gained through this endeavor provides invaluable practical insights and establishes a strong foundation for future explorations. As the project concludes, it underscores the potential of machine learning in unraveling patterns within social media data, setting the stage for further advancements in this fascinating confluence of data science and digital marketing. The methodologies and findings presented here pave the way for others to refine and expand upon this work.
+
+----
+
+## Team Contributions
+Throughout the assignment, we effectively distributed tasks among team members. Mert and Berat contributed to data preparation. All group members participated in feature engineering. Mert focused on improving the efficiency of stemming words, Berat examined correlations between attributes and target (y) values, and Ulaş worked on removing outliers. In the initial phase, all group members experimented with different models, ultimately selecting SVM for classification and linear regression for predicting like counts. In the second phase, they used the same models but tried different approaches. For the final phase, they combined the best elements of their individual models to create a new, optimized model.
+
