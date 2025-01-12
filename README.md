@@ -111,6 +111,7 @@ The inclusion of feature engineering techniques, such as the calculation of enga
 
 ![alt-text-1](plots/avglike.png "Before Taking Log") ![alt-text-2](plots/logavglike.png "After Taking Log")
 ![alt-text-1](plots/avgcomment.png "Before Taking Log") ![alt-text-2](plots/logavgcomment.png "After Taking Log")
+
 **Correlation Matrices**
 ![Alt text](plots/matrix1.png )
 ![Alt text](plots/matrix2.png)
