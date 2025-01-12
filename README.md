@@ -110,6 +110,8 @@ The methodology encompassed the deployment of Support Vector Machines (SVM) for 
 The inclusion of feature engineering techniques, such as the calculation of engagement rates and the application of TfidfVectorizer for textual data, played a pivotal role in enhancing model performance. Despite these efforts, the phenomenon of overfitting was observed, particularly in the regression model, where performance on unseen data lagged behind its training counterparts. This underlines the inherent challenges of balancing model complexity with generalization in social media datasets. So we standardized our data by taking log of it. You can see thee correlaction between attributes and like count below plots.
 
 ![alt-text-1](plots/avglike.png "Before Taking Log") ![alt-text-2](plots/logavglike.png "After Taking Log")
+![alt-text-1](plots/avgcomment.png "Before Taking Log") ![alt-text-2](plots/logavgcomment.png "After Taking Log")
+![alt-text-1](plots/matrix1.png "Before Taking Log") ![alt-text-2](plots/matrix2.png "After Taking Log")
 
 
 
