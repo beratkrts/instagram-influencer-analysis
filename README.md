@@ -1,6 +1,11 @@
 
 # Influencer Classification and Like Count Prediction
 
+## Group Members
+- Mert Tokgöz 30682
+- Berat Karataşoğlu 30576
+- Cemal Ulaş Erdoğan 30848
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
